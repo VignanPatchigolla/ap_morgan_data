@@ -1,0 +1,10 @@
+{
+	"name": "keyvault_LS_project2",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://vignansecrets.vault.azure.net/"
+		}
+	}
+}

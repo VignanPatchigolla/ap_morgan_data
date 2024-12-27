@@ -1,0 +1,39 @@
+{
+	"name": "morgan_data_pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "databricks_notebook",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Shared/project2_notebook",
+					"baseParameters": {
+						"fileName": {
+							"value": "@pipeline().parameters.fileName",
+							"type": "Expression"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "databricks_project2_LS",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}

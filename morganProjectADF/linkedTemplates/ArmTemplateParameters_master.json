@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "morganProjectADF"
+		},
+		"ADLS_project2_LS_accountKey": {
+			"value": ""
+		},
+		"ADLS_project2_LS_properties_typeProperties_url": {
+			"value": "https://practiceprojects.dfs.core.windows.net/"
+		},
+		"databricks_project2_LS_properties_typeProperties_existingClusterId": {
+			"value": "1217-112508-akpbtya"
+		},
+		"keyvault_LS_project2_properties_typeProperties_baseUrl": {
+			"value": "https://vignansecrets.vault.azure.net/"
+		},
+		"storage_event_trigger_properties_morgan_data_pipeline_parameters_fileName": {
+			"value": "@triggerBody().fileName"
+		},
+		"storage_event_trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/21d3448b-176c-40e9-9587-93639c7530f7/resourceGroups/data_engineer_projects/providers/Microsoft.Storage/storageAccounts/practiceprojects"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
