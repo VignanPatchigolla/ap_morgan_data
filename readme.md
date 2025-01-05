@@ -40,8 +40,9 @@ AP-Morgan-Data-Project/
 |— MorganDataADF/       # Contains all global parameters and ARM templates used in this project
 |— linkedService/       # Linked service created in ADF
 |— trigger/             # Triggers used for pipeline
+|— architecture/        # Architecture diagram for the project/
 |— README.md            # Project overview (this file)
-
+```
 
 ## 🚀 How to Use
 
